@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Proyect-main</title>
+</head>
+<body>
+    <form class="form-sign-in" action="formularios.html" method="get">
+        <h1 class="form-sign-in__form-title">Sign in to see</h1>
+        <div class="form-sign-in__label-input">
+            <label for="form-sign-in__input-email">Email:</label>
+            <input id="form-sign-in__input-email" type="email" required>
+        </div>
+        <div class="form-sign-in__label-input">
+            <label for="form-sign-in__input-username">Username:</label>
+            <input id="form-sign-in__input-username" type="text" minlength="6" maxlength="12" required>
+        </div>
+        <div class="form-sign-in__label-input">
+            <label for="form-sign-in__input-password">Password:</label>
+            <input id="form-sign-in__input-password" type="password" minlength="4" maxlength="8" required>
+        </div>
+        <div class="form-sign-in__label-input">
+            <label for="form-sign-in__input-date">Date of birth:</label>
+            <input id="form-sign-in__input-date" type="date" required>
+        </div>
+        <div class="form-sign-in__label-input">
+            <label for="form-sign-in__input-age">Age:</label>
+            <input id="form-sign-in__input-age" type="range" min="14" max="75" required>
+        </div>
+        <!-- <fieldset class="form-sign-in__form-fieldset"> -->
+            <!-- <legend>You're Works</legend> -->
+        <div class="form-sign-in__div-works">
+            <h2>You're Works</h2>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-streamer">Streamer</label>   
+                <input id="form-fieldset__checkbox-works-streamer" name="Works" value="Streamer" type="checkbox">
+            </div>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-programmer">Programmer</label>
+                <input id="form-fieldset__checkbox-works-programmer" type="checkbox" name="Works" value="Programmer" checked>
+            </div>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-styles">Styles</label>
+                <input id="form-fieldset__checkbox-works-styles" type="checkbox" name="Works" value="Style" checked>
+            </div>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-youtuber">Youtuber</label>
+                <input id="form-fieldset__checkbox-works-youtuber" type="checkbox" name="Works" value="Youtuber">
+            </div>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-doctor">Doctor</label>
+                <input id="form-fieldset__checkbox-works-doctor" name="Works" value="Doctor" type="checkbox">
+            </div>
+            <div class="form-fieldset__checkbox-works">
+                <label for="form-fieldset__checkbox-works-translate" >Translate</label>
+                <input id="form-fieldset__checkbox-works-translate" name="Works" value="translate" type="checkbox">
+            </div>
+            <div class="form-fieldset__textarea">
+                <label for="form-fieldset__textarea-other">Other...</label>
+                <textarea class="textarea__other" name="Works" id="form-fieldset__textarea-other" cols="50" rows="4"></textarea>
+            </div>
+        <!-- </fieldset> -->
+        </div>
+        <button class="form-sign-in__buttom-send">Send</button>
+    </form>
+</body>
+</html>
